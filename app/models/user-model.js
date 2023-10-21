@@ -5,9 +5,11 @@ const userSchema = new Schema ({
     email: String,
     mobile: Number,
     password:String,
-    role: [
-        admin, operator, traveller
-    ],
+    role: [{
+        admin: String,
+        operator: String, 
+        traveller: String
+    }],
 }, {timestamps: true})
 
 const User = model('User', userSchema)
