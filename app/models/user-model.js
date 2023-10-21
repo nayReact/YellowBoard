@@ -4,6 +4,7 @@ const userSchema = new Schema ({
     username : String,
     email: String,
     mobile: Number,
+    password:String,
     role: [
         admin, operator, traveller
     ],
