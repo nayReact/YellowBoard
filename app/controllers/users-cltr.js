@@ -9,7 +9,7 @@ usersCltr.register = async(req, res) => {
         return res.status(400).json({errors: errors.array() })
     }
 
-    const body = _pick(req.body, ['username', 'email', 'password'])
+    const body = _.pick(req.body, ['username', 'email', 'password'])
     try {
         const user = new User(body)
         await user.save()
