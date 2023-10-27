@@ -8,7 +8,7 @@ const userSchema = new Schema ({
     role: [{
         admin: String,
         operator: String, 
-        traveller: String
+        user: String
     }],
 }, {timestamps: true})
 
